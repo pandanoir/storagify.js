@@ -1,0 +1,23 @@
+{
+  "name": "storagify.js",
+  "version": "0.0.1",
+  "description": "you don't need to deal with localStorage",
+  "main": "dist/storagify.js",
+  "scripts": {
+    "preversion": "npm test",
+    "version": "npm run build && gulp && git add -A",
+    "postversion": "git push && git push --tags",
+    "pretest": "npm run build",
+    "test": "mocha -R spec --require mock-local-storage",
+    "build": "rollup src/main.js -c -o dist/storagify.js --name Storagify"
+  },
+  "keywords": [],
+  "author": "Naoto Ikuno <moon_in_france@yahoo.co.jp>",
+  "license": "MIT",
+  "files": {},
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "mock-local-storage": "^1.1.7",
+    "rollup": "^0.67.4"
+  }
+}
