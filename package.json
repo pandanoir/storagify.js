@@ -14,7 +14,12 @@
   "keywords": [],
   "author": "Naoto Ikuno <moon_in_france@yahoo.co.jp>",
   "license": "MIT",
-  "files": {},
+  "files": [
+      "dist/storagify.js",
+      "package.json",
+      "LICENCE",
+      "README.md"
+  ],
   "devDependencies": {
     "mocha": "^5.2.0",
     "mock-local-storage": "^1.1.7",
